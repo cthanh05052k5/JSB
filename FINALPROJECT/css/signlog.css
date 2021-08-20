@@ -1,0 +1,32 @@
+.w-100{
+    width: 100%;
+}
+.form-login input{
+    height: 35px;
+    margin-bottom: 5px;
+    outline: none;
+    margin-left: 428px;
+    border-radius: 5%;
+}
+.form-login button{
+    width: 150px;
+    height: 40px;
+    margin-left: 480px;
+   border-radius: 10%;
+    background-color: floralwhite;
+   border-style: groove black 100px ;
+   margin-top: 10px;
+}
+.signinbutton{
+margin-left: 50px;
+}
+.b{
+    text-transform:uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    color: deepskyblue;
+    margin-bottom: 40px;
+}
+.container{
+    text-align: center;
+}

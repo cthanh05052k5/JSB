@@ -1,0 +1,12 @@
+.animation{
+
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+   
+}
+@keyframes example {
+    0%   { left:0px; }
+    25%  { left:200px; }
+}

@@ -1,0 +1,148 @@
+
+.dropbtn {
+    background-color:black;
+    color: #ccc;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    text-transform: uppercase;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    margin-bottom: 0px;
+    width: 180px;
+  }
+  
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position:absolute;
+    z-index: 1;
+
+    background-color:#ccc;
+    min-width: 180px;
+    box-shadow: 0 10 10 10 rgba(0,0,0,);
+    text-transform: uppercase;
+    width: 180px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 17px 18px;
+    text-decoration: none;
+    display: block;
+    width: auto;
+    
+   
+  
+  }
+  
+  .dropdown-content a:hover {background-color: rgb(0, 128, 128)}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+
+  .dropdown:hover .dropbtn {background-color:cornflowerblue}
+  .a{
+    width: 150px;
+    height: 150px;
+    margin-top:  150px;
+    float: left;
+    border:dashed black;
+  
+    font-size: 20px;
+    margin: 30px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+
+}
+.b{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.c{
+  width: 150px;
+  height: 150px;
+  margin-top:  150px;
+  float: left;
+  border:dashed black;
+
+  font-size: 20px;
+  margin: 30px;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  
+}
+
+.dropbtn1{
+  background-color: #FF99FF;
+  color: white;
+  padding: 16px;
+  font-size: 15px;
+  border: none;
+  text-transform: uppercase;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  width: 630px;
+}
+.x{
+  font-size: 25px;
+  float: left;
+
+}
+.y{
+  width: 100%;
+  background-color: burlywood;
+  height: 700px;
+  margin: 25px;
+}
+.z{
+  text-align: center;
+}
+.logo{
+  margin-top: 0px;
+  height: 150px;
+  width: 150px;
+  float: left;
+}
+.thanhmenu{
+  float: left;
+  margin-left: 5px;
+  margin-top: 24px;
+}
+
+
+.pagename{
+  float: left;
+  margin-top: 34px;
+  font-stretch: extra-expanded;
+  font-size: 24px;
+  font-weight: 1000;
+  color: goldenrod;
+margin-left: 10px;
+}
+.clock{
+    position: absolute;
+    margin-top: 35px;
+    transform: translateX(-50%) translateY(-50%0);
+    color: #ccc;
+    font-size: 24px;
+    font-family: Orbitron;
+    letter-spacing: 5px;
+
+}
+.menubu{
+  position: relative;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}

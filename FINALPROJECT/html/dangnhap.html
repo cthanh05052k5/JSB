@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/signlog.css">
+    <link rel="stylesheet" href="/css/vip.css"/>
+    <link rel="stylesheet" href="/css/vip.css">
+    <link rel="stylesheet" href="/css/style1.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/nivo-slider.css">
+    <link rel="stylesheet" href="/css/dark.css">
+    <link rel="stylesheet" href="/css/light.css">
+    <link rel="stylesheet" href="/css/bar.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/JS/jquery-1.7.1.min.js">
+    <link rel="stylesheet" href="/JS/jquery.nivo.slider.js"> 
+    <link rel="stylesheet" href="/JS/settings.json">
+    <link rel="stylesheet" href="/JS/scrollB.js">
+</head>
+
+
+
+<body >
+  <div>
+    <div class="container-fluid "  style="background-color: black; height: 100px;" >
+      <div class="menubu">
+        <div class="col-3">
+          <P class="pagename">VIETNAMESE CAR PAGE</P>
+        </div>
+       <div class="col-7">
+       <div class="thanhmenu">
+          
+          <div class="dropdown"> <div  class="dropbtn" style=" text-align: center;">
+            <a style="color: #ccc;" href="/html/home.html"> HOME</a> 
+          </div> 
+        </div>
+        <div class="dropdown">
+        
+          <button class="dropbtn">Car Brands</button>
+          <div class="dropdown-content">
+            <a class="loai" href="/trangphu/Kia.html">Kia</a> 
+              <a class="loai" href="/trangphu/Mazda.html">Mazda</a>
+              <a class="loai" href="/trangphu/Mercedes.html">Mecerdes-Benz</a>
+              <a class="loai" href="/trangphu/VinFast.html"> VinFast</a>
+          </div>
+        </div>
+      
+        <div class="dropdown"> <button class="dropbtn"> 
+         <a style="color: #ccc;" href="/html/dangnhap.html">Log in/ Sign in</a>
+        
+        </button> </div>
+        <div class="dropdown">
+          <button class="dropbtn">CONTACT</button>
+          <div class="dropdown-content">
+              <a href="https://www.facebook.com/profile.php?id=100013057865692">Facebook</a>
+              <a href="https://www.instagram.com/congthanhofficial/">Instagram</a>
+              <a href="https://www.facebook.com/profile.php?id=100013057865692"> Fanpage</a>
+          </div>
+        </div>
+      </div>
+     
+    </div> 
+       </div>
+       <div class="col-2" style="position: absolute; margin-left: 1250px;">
+        <div >
+          <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+        </div>    
+        </div>
+       </div>
+        
+       
+      </div>
+      
+    </div>
+
+<div class="clear"></div>
+
+
+    <div class="container-fluid"> <img style="width: 100%;"  src="/Background/hinh1.jpg" alt="">
+        </div>
+    <div class="container" style="position: absolute; margin-top: -700px; margin-left: 180px;">
+        <div class="b">contact with us</div>
+        <div class="col-3 form-login">
+            <input type="text"placeholder="Tên đăng nhập" id="username"class="w-100" >
+            <input type="text"placeholder="Mật khẩu" id="password" class="w-100">
+            <button class="signinbutton" onclick="KT_DangNhap()" >sign in</button>
+        </div>
+   </div>
+
+<script>
+    function KT_DangNhap(){
+        var username, password;
+        username = document.getElementById('username').value;
+        password = document.getElementById('password').value;
+        if (username ==""|| password =="" )
+        alert("Tên đăng nhập hoặc mật khẩu không được để trống");
+        else
+        alert("Xin chào" + username );
+    }
+</script>
+<script>
+  function showTime() {
+      var date = new Date();
+      var h = date.getHours(); // 0 - 23
+      var m = date.getMinutes(); // 0 - 59
+      var s = date.getSeconds(); // 0 - 59
+      var session = "AM";
+
+      if (h == 0) {
+          h = 12;
+      }
+
+      if (h > 12) {
+          h = h - 12;
+          session = "PM";
+      }
+
+      h = (h < 10) ? "0" + h : h;
+      m = (m < 10) ? "0" + m : m;
+      s = (s < 10) ? "0" + s : s;
+
+      var time = h + ":" + m + ":" + s + " " + session;
+      document.getElementById("MyClockDisplay").innerText = time;
+      document.getElementById("MyClockDisplay").textContent = time;
+
+      setTimeout(showTime, 1000);
+
+  }
+
+  showTime();
+ </script>
+
+</body>
+
+
+
+
+
+

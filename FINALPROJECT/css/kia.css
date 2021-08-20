@@ -1,0 +1,56 @@
+.kia1{
+    width: 470px;
+    height: 470px;
+margin-left: 25px;
+margin-top: 40px;
+}
+.kiabg1{
+    height: 580px;
+background-color: gray;
+margin-right: 20px;
+}
+.kiabg2{
+    height: 580px;
+    background-color: gray;
+    margin-left: 20px;
+}
+.kiabg3{
+    height: 580px;
+    background-color: gray;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+.kiabg4{
+    height: 580px;
+    background-color: gray;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+.mau1{
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    margin: 40px 0px 40px 0;
+}
+.loai1{
+    text-align: center;
+    font-size: 28px;
+    margin-top: 15px;
+    font-weight:700;
+}
+.kiabgsmall1{
+    height: 480px;
+    background-color: gray;
+}
+.kiasmall{
+    height: 400px;
+    width: 440px;
+    margin-left: 18px;
+    margin-top: 18px;
+}
+.moresmall{
+    text-align: center;
+    font-size: 28px;
+    margin-top: 15px;
+    font-weight:700;
+}

@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/vip.css">
+    <link rel="stylesheet" href="/css/style1.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/nivo-slider.css">
+    <link rel="stylesheet" href="/css/dark.css">
+    <link rel="stylesheet" href="/css/light.css">
+    <link rel="stylesheet" href="/css/bar.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/JS/jquery-1.7.1.min.js">
+    <link rel="stylesheet" href="/JS/jquery.nivo.slider.js"> 
+    <link rel="stylesheet" href="/JS/settings.json">
+    <link rel="stylesheet" href="/JS/scrollB.js">
+    <script type="text/javascript" src="scrollB.js"></script>
+</head>
+
+<body style="background-color: darkgray;">
+    
+
+<div class="container-fluid" style="background-color: black; height: 100px;" >
+  <div class="menubu">
+    <div class="col-3">
+      <P class="pagename">VIETNAMESE CAR PAGE</P>
+    </div>
+   <div class="col-7">
+   <div class="thanhmenu">
+      
+      <div class="dropdown"> <button  class="dropbtn">HOME</button> </div>
+    <div class="dropdown">
+    
+      <button class="dropbtn">Car Brands</button>
+      <div class="dropdown-content">
+        <a class="loai" href="/trangphu/VinFast.html"> VinFast</a>
+        <a class="loai" href="/trangphu/Kia.html">Kia</a>
+        <a class="loai" href="/trangphu/Mec.html">Mecerdes-Benz</a>
+        <a class="loai" href="/trangphu/Mazda.html">Mazda</a>
+        <a class="loai" href="/trangphu/lamborghini.html">Lamborghini</a>
+        <a class="loai" href="/trangphu/Ferrari.html">Ferrari</a>
+      </div>
+    </div>
+  
+    <div class="dropdown"> <button class="dropbtn"> 
+    <a  href="/html/dangnhap.html">Log in/ Sign in</a>
+    </button> </div>
+    <div class="dropdown">
+      <button class="dropbtn">CONTACT</button>
+      <div class="dropdown-content">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#"> Fanpage</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 slider-wrapper theme-default">
+		<div id="slider" class="nivoSlider"> 
+				<img style="display:none" class="BigImg" src="/LamborghiniImg/5.2.jpg">
+				<img style="display:none" class="BigImg" src="/LamborghiniImg/5.10.jpg">
+				<img style="display:none" class="BigImg" src="/VinFastImg/1.2.jpg">
+				<img style="display:none" class="BigImg" src="/KiaImg/2.1.jpg">
+				<img style="display:none" class="BigImg" src="/MecImg/3.4.jpg">
+        <img style="display:none" class="BigImg" src="/MazdaImg/4.2.jpg">
+        <img style="display:none" class="BigImg" src="/FerrariImg/6.1.jpg">
+    </div>
+		</div>
+</div> 
+   </div>
+   <div class="col-2">
+    <div >
+      <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+    </div>    
+    </div>
+   </div>
+    
+   
+  </div>
+  
+</div>
+
+  
+
+<div class="clear"></div>  
+
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 7</div>
+    <img  src="/LamborghiniImg/5.6.jpg" style="width: 100%; ; height: 800px;">
+    <div class="text">Lamborghini Egoista</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 7</div>
+    <img src="/LamborghiniImg/5.10.jpg" style="width:100%; height: 800px;">
+    <div class="text">Lamborghini Sian Roaster</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 7</div>
+    <img src="/FerrariImg/6.1.jpg" style="width:100%; height: 800px;">
+    <div class="text">Ferrari 458</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 7</div>
+    <img src="/VinFastImg/1.2.jpg" style="width:100%; height: 800px;">
+    <div class="text">VinFast Lux A2.0</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 7</div>
+    <img src="/KiaImg/2.1.jpg" style="width:100%; height: 800px;">
+    <div class="text">Kia Cerato</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 7</div>
+    <img  src="/MecImg/3.4.jpg" style="width:100%; height: 800px;">
+    <div class="text">Mecerdes-Benz </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">7 / 7</div>
+    <img src="/MazdaImg/4.6.jpg" style="width:100%; height: 800px;">
+    <div class="text">Mazda CX-8</div>
+  </div>
+
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+</div>
+ 
+  
+ 
+
+<div class="clear"></div>
+<div class="heading">
+  NHỮNG DÒNG XE PHỔ BIẾN VÀ PHỤ HỢP VỚI TỪNG TÚI TIỀN
+</div> 
+
+
+
+</div>
+<div class="clear"></div>
+<div class="container">
+  <h1 class="xe1" >I. Hãng xe giá thành rẻ: </h1>
+</div>
+  
+<div class="container-fluid" style="background-color: lightseagreen;" >
+<div ></div>
+<div class="col-5" style="margin-left: 100px; margin-top: 30px;"> 
+  <h2 style="margin-top: 10px;margin-bottom: 10px;">1. Hãng Vinfast</h2>
+  <p style="margin-top: 100px; font-size: 180px;">"</p>
+  <p class="letter" style="margin-left: 100px;font-size: 20px;" >VinFast được giới thiệu với thông điệp Việt Nam luôn sáng tạo phong cách riêng và 
+    luôn giữ được sự an toàn nhằm tôn vinh chiếc xe và giá trị của xe ô tô đầu tiên của 
+    Việt Nam. VinFast khát vọng của việc xây dựng thương hiệu Việt để có thể vươn ra tầm
+     cỡ quốc tế. Cùng tìm hiểu các loại xe VinFast cũng như các loại loại xe VinFast sau
+      đây:</p></div>
+      <div class="col-6">
+        <img style="height: 600px; width: 600px; margin-top: 100px; margin-left: 150px;" src="/logo/vinfastlogo.png" alt="">
+      </div>
+       
+</div>
+
+
+
+<div class="clear"> </div>
+<div class="container-fluid" style="height: 5px;background-color: black;"></div>
+
+<div class="container">
+  <div class="col-6">
+      <div class="bg"> 
+          <img class="small3" src="/VinFastImg/1.2.jpg" alt="">   
+          
+         <div> <p class="smallletter3">VinFast Lux A 2.0</p>   </div> 
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="col-6">
+        <div class="bg"> 
+            <img class="small1" src="/VinFastImg/1.1.jpg" alt="">   
+            
+           <div> <p class="smallletter1">VinFast Fadil</p>   </div> 
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="col-6">
+            <div class="bg"> 
+                <img class="small3" src="/VinFastImg/1.4.jpg" alt="">   
+                
+               <div> <p class="smallletter3"> VinFast President  </p>   </div> 
+            </div>
+            </div>
+          </div>
+
+            
+            <div class="container">
+              <div class="col-6">
+                  <div class="bg"> 
+                      <img class="small4" src="/VinFastImg/1.3.jpg" alt="">   
+                      
+                     <div> <p class="smallletter4"> VinFast Lux SA 2.0 </p>   </div> 
+                  </div>
+                  </div>
+                  </div>
+
+                  <div class="clear"></div>
+
+                  <div class="container">
+                   
+                      <h2 style="margin-top: 10px;margin-bottom: 10px;">2. Hãng Kia</h2>
+                      <p class="letter">Kia là hãng xe khá phổ biến ở Việt Nam cùng với  hãng VinFast. 
+                        Có thể bạn đang cần tìm hiểu về hãng xe cũng như các loại xe Kia đang được bán trên thị trường, 
+                        và tất nhiên giá các loại xe Kia để bạn có thể dễ dàng lựa chọn.
+                         Dưới đây, EPIC VIETNAMESE CAR PAGE sẽ chia sẻ thông tin về hãng cũng như cac loai xe Kia đang phổ biến trên thị trường.</p>
+                    
+                  </div>
+                  
+                      
+                  <div class="container">
+                    <div class="col-6">
+                        <div class="bg"> 
+                            <img class="small1" src="/KiaImg/2.2.jpg" alt="">   
+                            
+                           <div> <p class="smallletter1">Kia Morning</p>   </div> 
+                        </div>
+                      </div>
+                    </div>
+                  
+                  <div class="container">
+                    <div class="col-6">
+                        <div class="bg"> 
+                            <img class="small3" src="/KiaImg/2.3.jpg" alt="">   
+                            
+                           <div> <p class="smallletter3">Kia Seltos</p>   </div> 
+                        </div>
+                      </div>
+                    </div>
+                  
+                      <div class="container">
+                          <div class="col-6">
+                              <div class="bg"> 
+                                  <img class="small3" src="/KiaImg/2.1.jpg" alt="">   
+                                  
+                                 <div> <p class="smallletter3"> Kia Cerato </p>   </div> 
+                              </div>
+                              </div>
+                              </div>
+
+                              <div class="container">
+                                <div class="col-6">
+                                    <div class="bg"> 
+                                        <img class="small4" src="/KiaImg/2.4.jpg" alt="">   
+                                        
+                                       <div> <p class="smallletter4"> Kia Sorento </p>   </div> 
+                                    </div>
+                                    </div>
+                                    </div>
+                  
+                                   <div class="clear"></div>
+
+                                   <div class="container"> 
+                                      <h1 class="xe1" >  II. Hãng xe giá tầm trung đến cao</h1> 
+                                <h2 style="margin-top: 10px;margin-bottom: 10px;"> 1. Mecerdes-Benz </h2>
+                                <p class="letter"> Mercedes-Benz đều toát lên nét sang trọng, lịch lãm riêng biệt,
+                                   khoang nội thất rộng rãi với nhiều trang bị hiện đại bậc nhất.
+                                  Không dừng lại ở đó, đặc điểm thu hút khách hàng của những mẫu xe
+                                   này còn là sức mạnh động cơ vượt trội, đủ sức cho người lái trải nghiệm
+                                    cũng như mang lại sự phấn khích trên mọi cung đường. Các loại Mecerdes-Benz </p>
+                                   </div>
+                                   
+
+
+<div class="container">
+  <div class="col-6">
+      <div class="bg"> 
+          <img class="small1" src="/MecImg/3.7.jpg" alt="">   
+          
+         <div> <p class="smallletter1">Mecerdes-Benz C-Class</p>   </div> 
+      </div>
+      
+  </div>
+  </div>
+
+<div class="container">
+  <div class="col-6">
+      <div class="bg"> 
+          <img class="small3" src="/MecImg/3.2.jpg" alt="">   
+          
+         <div> <p class="smallletter3">Mecerdes-Benz E-Class</p>   </div> 
+      </div>
+    </div>
+  </div>
+
+    <div class="container">
+        <div class="col-6">
+            <div class="bg"> 
+                <img class="small3" src="/MecImg/3.3.jpg" alt="">   
+                
+               <div> <p class="smallletter3"> Mecerdes-Benz S-Class </p>   </div> 
+            </div>
+            </div>
+          </div>
+            
+            <div class="container">
+              <div class="col-6">
+                  <div class="bg"> 
+                      <img class="small4" src="/MecImg/3.1.jpg" alt="">   
+                      
+                     <div> <p class="smallletter4"> Mecerdes-Benz A-Class </p>   </div> 
+                  </div>
+                  </div>
+                  </div>
+
+                  <div class="container">
+                    <div class="col-6">
+                        <div class="bg"> 
+                            <img class="small1" src="/MecImg/3.8.jpg" alt="">   
+                            
+                           <div> <p class="smallletter1">Mecerdes-Benz V-Class</p>   </div> 
+                        </div>
+                      </div>
+                    </div>
+                  
+                  <div class="container">
+                    <div class="col-6">
+                        <div class="bg"> 
+                            <img class="small3" src="/MecImg/3.5.jpg" alt="">   
+                            
+                           <div> <p class="smallletter3">Mecerdes-Benz GL-Class</p>   </div> 
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="col-6">
+                            <div class="bg"> 
+                                <img class="small3" src="/MecImg/3.6.jpg" alt="">   
+                               <div> <p class="smallletter3"> Mecerdes-Benz Mayback-Class </p>   </div> 
+                            </div>
+                            </div>
+                          </div>
+                            
+                            <div class="container">
+                              <div class="col-6">
+                                  <div class="bg"> 
+                                      <img class="small4" src="/MecImg/3.4.jpg" alt="">                                        
+                                     <div> <p class="smallletter4"> Mecerdes-Benz G-Class </p>   </div> 
+                                  </div>
+                                  </div>
+                                  </div>
+
+                 <div class="clear"></div>
+                 
+<div class="container">
+  <h2 style="margin-top: 10px;margin-bottom: 10px;">2. Mazda</h2>
+  <P class="letter"> Mazda là hãng xe châu Á, từ lâu đã có chỗ đứng tại thị trường Việt Nam.
+     Không chỉ là dòng xe cao cấp mà còn đáp ứng được nhu cầu sử dụng của nhiều gia đình Việt.
+      Với những ưu điểm như an toàn, trẻ trung, hiện đại, phù hợp với nhiều mục đích sử dụng,...
+      do đó các dòng xe Mazda thường đạt doanh số cao và là lựa chọn ưu tiên hàng đầu trong từng phân khúc riêng lẻ.</P>
+</div>
+
+<div class="clear"></div>
+
+<div class="container">
+  <div class="col-6">
+      <div class="bg"> 
+          <img class="small1" src="/MazdaImg/4.2.jpg" alt="">             
+         <div> <p class="smallletter1">Mazda 3</p>   </div> 
+      </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="col-6">
+      <div class="bg"> 
+          <img class="small3" src="/MazdaImg/4.1.jpg" alt="">            
+         <div> <p class="smallletter3">Mazda 2</p>   </div> 
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+      <div class="col-6">
+          <div class="bg"> 
+              <img class="small3" src="/MazdaImg/4.5.jpg" alt="">   
+              
+             <div> <p class="smallletter3"> Mazda CX-5 </p>   </div> 
+          </div>
+          </div>
+        </div>
+
+          <div class="container">
+            <div class="col-6">
+                <div class="bg"> 
+                    <img class="small4" src="/MazdaImg/4.6.jpg" alt="">   
+                    
+                   <div> <p class="smallletter4"> Mazda CX-8 </p>   </div> 
+                </div>
+                </div>
+                </div>
+
+                <div class="container">
+                  <div class="col-6">
+                      <div class="bg"> 
+                          <img class="small1" src="/MazdaImg/4.4.jpg" alt="">   
+                          
+                         <div> <p class="smallletter1">Mazda BT-50 </p>   </div> 
+                      </div>
+                   </div>
+                  </div>
+                
+                <div class="container">
+                  <div class="col-6">
+                      <div class="bg"> 
+                          <img class="small3" src="/MazdaImg/4.3.jpg" alt="">   
+                          
+                         <div> <p class="smallletter3">Mazda 6</p>   </div> 
+                      </div>
+                    </div>
+                  </div>
+
+    <div class="clear"></div>
+
+<div class="container">
+  <h1 class="xe1" > III. Các hãng siêu xe dành cho người đam mê tốc độ: </h1>
+  <h2 style="margin-top: 10px;margin-bottom: 10px;"> 1. Hãng Lamborghini </h2 >
+    <p class="letter">Nhắc đến các dòng siêu xe, chắc hẳn ai cũng nghĩ đến hãng xe đình đám Lamborghini.
+       Nhắc đến Lamborghini chắc chắn phần lớn mọi người sẽ nhớ những chiếc siêu xe đẹp, nhanh, mạnh mẽ bậc nhất hành tinh cùng với giá tiền đắt đỏ.
+      Sau đây là hình ảnh một số dòng xe độc đáo nhất của hãng xe này:</p>
+</div>
+
+<div class="clear"></div>
+
+  <div class="container">
+    <div class="col-6">
+        <div class="bg"> 
+            <img class="small1" src="/LamborghiniImg/5.9.jpg" alt="">   
+            
+           <div> <p class="smallletter1">Lamborghini Huracan</p>   </div> 
+        </div>
+      </div>
+    </div>
+  
+  <div class="container">
+    <div class="col-6">
+        <div class="bg"> 
+            <img class="small3" src="/LamborghiniImg/5.12.jpeg" alt="">   
+            
+           <div> <p class="smallletter3">Lamborghini Urus</p>   </div> 
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="col-6">
+            <div class="bg"> 
+                <img class="small3" src="/LamborghiniImg/5.8.jpeg" alt="">   
+                
+               <div> <p class="smallletter3"> Lamborghini Aventador </p>   </div> 
+            </div>
+            </div>
+          </div>
+
+            <div class="container">
+              <div class="col-6">
+                  <div class="bg"> 
+                      <img class="small4" src="/LamborghiniImg/5.13.jpg" alt="">   
+                      
+                     <div> <p class="smallletter4"> Lamborghini Veneno </p>   </div> 
+                  </div>
+                  </div>
+                  </div>
+
+                 <div class="clear"></div>
+               
+
+
+                 <div class="container-fluid">
+                  <div class="col-12"> 
+                    <h1 class="tieude2"> Special edition </h1>    
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+
+                <div class="container">
+                  <div class="col-6">
+                      <div class="bg"> 
+                          <img class="small3" src="/LamborghiniImg/5.5.jpg" alt="">   
+                          
+                         <div> <p class="smallletter3"> Lamborghini Centenario </p>   </div> 
+                      </div>
+                      </div>
+                    </div>
+
+                      <div class="container">
+                        <div class="col-6">
+                            <div class="bg"> 
+                                <img class="small4" src="/LamborghiniImg/5.6.jpg" alt="">   
+                                
+                               <div> <p class="smallletter4"> Lamborghini Egoista </p>   </div> 
+                            </div>
+                            </div>
+                            </div>
+          
+                           <div class="clear"></div>
+                           <div class="container">
+                            
+                            <h2 style="margin-top: 10px;margin-bottom: 10px;"> 2. Hãng Ferrari </h2 >
+                              <p class="letter">Ferrari là hãng sản xuất dòng siêu xe thể thao nổi tiếng của Ý. 
+                                Tên tuổi của hãng gắn liền với đường đua công thức 1 đình đám. 
+                                Các dòng xe của hãng luôn nổi bật với phong cách thể thao, khỏe khoắn, 
+                                động cơ mạnh mẽ với khả năng bức tốc được ví như “chiếc phản lực mặt đất”.
+                              Những loại Ferrari đẹp nhất:</p>
+                          </div>
+
+                          <div class="clear"></div>
+
+                          <div class="container">
+                            <div class="col-6">
+                                <div class="bg"> 
+                                    <img class="small1" src="/FerrariImg/6.2.jpg" alt="">   
+                                    
+                                   <div> <p class="smallletter1">Ferrari 488</p>   </div> 
+                                </div>
+                              </div>
+                            </div>
+                          
+                          <div class="container">
+                            <div class="col-6">
+                                <div class="bg"> 
+                                    <img class="small3" src="/FerrariImg/6.1.jpg" alt="">   
+                                    
+                                   <div> <p class="smallletter3">Ferrari 458</p>   </div> 
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                <div class="col-6">
+                                    <div class="bg"> 
+                                        <img class="small3" src="/FerrariImg/6.6.jpg" alt="">   
+                                        
+                                       <div> <p class="smallletter3"> Ferrari 812 Superfast </p>   </div> 
+                                    </div>
+                                    </div>
+                                    </div>
+
+                                    <div class="container">
+                                      <div class="col-6">
+                                          <div class="bg"> 
+                                              <img class="small4" src="/FerrariImg/6.3.jpg" alt="">   
+                                              
+                                             <div> <p class="smallletter4"> Ferrari F8 Tributo </p>   </div> 
+                                          </div>
+                                          </div>
+                                          </div>
+
+                                        </div>
+                                        <div class="container">
+                                            <div class="col-6">
+                                                <div class="bg"> 
+                                                    <img class="small3" src="/FerrariImg/6.5.jpg" alt="">   
+                                                    
+                                                   <div> <p class="smallletter3"> Ferrari SF90 Stradale </p>   </div> 
+                                                </div>
+                                                </div>
+                                                </div>
+
+                                                <div class="container">
+                                                  <div class="col-6">
+                                                      <div class="bg"> 
+                                                          <img class="small4" src="/FerrariImg/6.4.jpg" alt="">   
+                                                          
+                                                         <div> <p class="smallletter4"> Ferrari Roma </p>   </div> 
+                                                      </div>
+                                                      </div>
+                                                      </div>
+
+                                                      <div class="clear"></div>
+
+                                                      <div  >
+                                                        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+                                                      </div>        
+
+                                                      <div class="container-fluid" style="background-color: black;height: 300px;">
+                                                        <div class="dropdown"> <button  class="dropbtn">Company</button> </div>
+                                                        <div class="dropdown">
+                                                        
+                                                          <button class="dropbtn">Media center</button>
+                                                         
+                                                        </div>
+                                                        <div class="dropdown"> <button class="dropbtn">Privacy & Legal</button> </div>
+                                                        <div class="dropdown">
+                                                          <button class="dropbtn">CONTACT us</button>
+                                                          </div>
+                                                          <div class="phonenumber">
+                                                            <p>FOR MORE DETAILS, PLEASE CALL HOT-LINE:</p>
+                                                          <p class="number">      0815-4568-555  </p>
+                                                          <p class="number">      0815-4456-333  </p>
+                                                          <p class="number">      0815-3564-777 </p>
+                                                        </div>
+                                                          
+                                                          <p class="copy">Copyright © 2021 Automobili Lamborghini S.p.A. a sole shareholder company part of Audi Group.
+                                                            All rights reserved. VAT no. IT 00591801204</p>
+                                                         
+                                                          <p class="copy">Copyright ©2021 Ferrari S.p.A. - A company under Italian law, having its registered office at Via Emilia Est No. 1163,
+                                                             Modena, Italy, Companies’ Register of Modena, </p>
+                                                             <p class="copy"> Copyright ©2021 International website of Mercedes-Benz AG. Visitors from the U.S.</p>
+                                                       </div>
+                                                           
+                                                        
+                                                      
+
+  
+    
+
+
+ 
+            
+</body>
+
+</html>
+<script>
+  function showTime() {
+      var date = new Date();
+      var h = date.getHours(); // 0 - 23
+      var m = date.getMinutes(); // 0 - 59
+      var s = date.getSeconds(); // 0 - 59
+      var session = "AM";
+
+      if (h == 0) {
+          h = 12;
+      }
+
+      if (h > 12) {
+          h = h - 12;
+          session = "PM";
+      }
+
+      h = (h < 10) ? "0" + h : h;
+      m = (m < 10) ? "0" + m : m;
+      s = (s < 10) ? "0" + s : s;
+
+      var time = h + ":" + m + ":" + s + " " + session;
+      document.getElementById("MyClockDisplay").innerText = time;
+      document.getElementById("MyClockDisplay").textContent = time;
+
+      setTimeout(showTime, 1000);
+
+  }
+
+  showTime();
+ </script>
+<script src="/JS/jquery-1.7.1.min.js"></script>
+	<script src="/JS/jquery.nivo.slider.js"></script>
+	<!-- <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>  -->
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 220) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
+      <script>
+        var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+      </script>

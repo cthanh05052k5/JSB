@@ -1,0 +1,54 @@
+.headinghome {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    font-size: 50px;
+    font-weight: 50px;
+    margin-left: 30px;
+ 
+    letter-spacing: 3px;
+}
+.daukep{
+    font-size: 150px;
+    font-weight: 50px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.loimodau{
+    margin-left: 80px;
+    margin-top: 0px; 
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 3px;
+
+}
+
+.mySlider{display:none;}
+.learnmore:hover {
+    background-color: #CCCCFF;
+}
+.hinhgopy{
+    width: 300px;
+    height: 300px;
+    margin-left: 80px;
+    margin-top: 80px;
+}
+.loigopy{
+    text-align: justify;
+    font-size: 25px;
+    margin-top: 80px
+}
+.menufixed{
+    position: fixed;
+}
+.small2:hover{
+    width: 470px;
+    height: 380px;
+}
+.small3:hover{
+    width: 480px;
+    height: 480px;
+}
+.small4:hover{
+    width: 340px;
+    height: 390px;
+}
